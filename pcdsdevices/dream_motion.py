@@ -79,10 +79,10 @@ class DREAM_Sample_Paddle(BaseInterface, GroupDevice):
     _icon = 'fa.minus-square'
     tab_component_names = True
     # Motor components
-    x = Cpt(SmarActEtherCAT, ':DGPD:MMT:MMS:X', kind='normal')
-    y = Cpt(SmarActEtherCAT, ':DGPD:MMT:MMS:Y', kind='normal')
-    z = Cpt(SmarActEtherCAT, ':DGPD:MMT:MMS:Z', kind='normal')
-    ret = Cpt(SmarActEtherCAT, ':DGPD:MMT:MMS:RET', kind='normal')
+    x = Cpt(SmarActEtherCAT, ':DGPD:MMT:X', kind='normal')
+    y = Cpt(SmarActEtherCAT, ':DGPD:MMT:Y', kind='normal')
+    z = Cpt(SmarActEtherCAT, ':DGPD:MMT:Z', kind='normal')
+    ret = Cpt(SmarActEtherCAT, ':DGPD:MMT:RET', kind='normal')
 
 
 class DREAM_Gas_Jet_Slits(BaseInterface, GroupDevice):
